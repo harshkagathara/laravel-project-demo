@@ -1,5 +1,7 @@
 composer install 
+<br>
 php artisan migrate
+<br>
 php artisan db:seed
 Image - 1
 ![image](https://user-images.githubusercontent.com/49555360/117183348-11134380-adf5-11eb-8f04-1ed46db534f4.png)
