@@ -1,0 +1,428 @@
+body {
+	background-image: url('/img/mainbg.png');
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	padding: 0px;
+	margin: 3%;
+	overflow-y: hidden;
+	background-repeat: no-repeat;
+	padding-bottom: 10px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column1,
+.column2 {
+	float: left;
+	padding: 20px;
+	position: relative;
+
+	/* Should be removed. Only for demonstration */
+}
+
+.column1 {
+	display: flex;
+	width: 40%;
+	justify-content: center;
+	color: #7dd3f6;
+}
+
+.column2 {
+	width: 60%;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: transpernt;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: black;
+	text-align: center;
+	font-weight: bold;
+	padding: 7px 15px;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+}
+
+li a:hover:not(.active) {
+	border-bottom: 1px solid purple;
+	transition: 0.5s;
+}
+
+.active {
+	background-color: #7dd3f6;
+	border-radius: 8px;
+	padding: 20px;
+}
+
+.lastlist {
+	float: right;
+}
+
+.row1 {
+	width: 425px;
+	/* border:1px solid #000000 ; */
+	height: fit-content;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding: 1em;
+	position: relative;
+}
+
+.row2 {
+	padding: 25px;
+}
+
+.log {
+	top: 50px;
+	margin-left: 34%;
+	position: absolute;
+	background-color: white;
+	border-radius: 50%;
+
+}
+
+.log1 {
+	padding: 3em 2em;
+	margin-top: 90px;
+}
+
+.bgcover {
+	background-image: url('/img/Website-Login-Page-(1)-1_03.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+}
+
+.field-icon {
+	float: right;
+	margin-left: -30px;
+	margin-top: 12px;
+	position: absolute;
+	z-index: 2;
+}
+
+h1 {
+	text-align: center;
+	color: #8141a1;
+}
+
+p {
+	text-align: center;
+	font-weight: 600;
+}
+
+p span {
+	display: block;
+}
+
+.botcontainer {
+	text-align: center;
+	margin-top: 10%;
+
+}
+
+.botcontainer img {
+	display: inline-block;
+	padding: 5px;
+}
+
+
+.signup-container {
+	width: 100%;
+	margin-top: 20px;
+	/* padding: 5px ; */
+	/* margin: 10% 10%; */
+}
+
+button {
+	-webkit-border-radius: 5em;
+	-moz-border-radius: 5em;
+	border-radius: 5px;
+	border: 1px solid #7dd3f6;
+	background-color: #7dd3f6;
+	color: #8141a1;
+	width: 100%;
+	height: 3.5em;
+	margin-top: 3em;
+}
+
+button:hover,
+button:focus {
+	background-color: #7dd3f6;
+	color: #8141a1;
+	outline: none;
+}
+
+label {
+	display: block;
+	margin: 2% 1%;
+	padding: 3% 0% 1%;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+	-webkit-border-radius: 0.625em;
+	-moz-border-radius: 0.625em;
+	border-radius: 5px;
+	border: 2px solid #e0bdf7;
+	color: #000000;
+	width: 98%;
+	height: 40px;
+	padding-left: 10px;
+	/* margin-right: 5px; */
+}
+
+#type {
+	-webkit-border-radius: 0.625em;
+	-moz-border-radius: 0.625em;
+	border-radius: 5px;
+	border: 2px solid #8141a1;
+	color: #000000;
+	width: 102%;
+	height: 40px;
+	padding-left: 10px;
+	/* margin-right: 5px; */
+}
+
+input[type="email"]:focus,
+#type:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:hover,
+input[type="text"]:hover,
+input[type="password"]:hover {
+	outline: none;
+	-webkit-border-radius: 0.625em;
+	-moz-border-radius: 0.625em;
+	border-radius: 5px;
+	/* border: 0.188em solid #000000; */
+	color: #000000;
+}
+
+.error-message {
+	display: block;
+	margin-bottom: 5%;
+	margin-top: 2%;
+}
+.playstore{
+	height: 50px;
+	width: 130px;
+}
+.appstore{
+	height: 50px;
+	width: 130px;
+}
+
+@media only screen and (min-width: 1210px) {
+	.log {
+		top: -10px;
+	}
+
+	.log1 {
+		margin-top: 30px;
+	}
+
+	.column2 {
+		padding-top: 0px;
+	}
+
+	li {
+		padding: 7px 5px;
+	}
+
+	.lastlist {
+		float: left;
+		margin-left: 10px;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	.log {
+		top: 50px;
+	}
+
+	.log1 {
+		margin-top: 90px;
+	}
+
+	.column2 {
+		padding: 20px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.column1 h1 {
+		font-size: 25px;
+	}
+
+	button {
+		margin-top: 2.3rem;
+	}
+}
+
+@media only screen and (max-width: 1150px) {
+
+	.column1 {
+		width: 45%;
+	}
+
+	.column2 {
+		width: 55%;
+	}
+
+	.row1 {
+		width: 400px;
+	}
+	.active{
+		padding: 18px;
+	}
+
+	li a {
+		padding: 7px 9px;
+		font-size: 14px;
+	}
+
+	
+
+}
+
+@media only screen and (max-width: 1024px) {
+	.column1 {
+		width: 50%;
+	}
+
+	.column2 {
+		width: 50%;
+	}
+
+	.row1 {
+		width: 420px;
+	}
+
+	li a {
+		padding: 7px 10px;
+		font-size: 11px;
+	}
+
+	.row2 {
+		margin-top: 50px;
+	}
+
+	ul {
+		position: absolute;
+		padding: 0px;
+		margin-top: 15px;
+		margin-left: -30px;
+		float: right;
+	}
+	.active{
+		margin-left:5px;
+		padding: 15px;
+		margin-top: 5px;
+	}
+	
+}
+
+@media only screen and (max-width: 975px) {
+	/* .form-check-label[data-abbr]::after { 
+        content: attr(data-abbr); 
+    }
+    
+    .form-check-label > span { display: none; }
+} */
+
+	li a {
+		padding: 7px 8px;
+		font-size: 11px;
+	}
+	ul{
+		margin-left: -45px;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	.column1 {
+		width: 100%;
+	}
+
+	.column2 {
+		display: none;
+	}
+
+	.row1 {
+		width: 420px;
+	}
+
+}
+
+@media only screen and (max-width: 460px) {
+	.column1 {
+		padding: 0px;
+	}
+}
+
+@media only screen and (max-width: 430px) {
+	button {
+		margin-top: 1.3rem;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	body {
+		align-items: center;
+	}
+
+	button {
+		margin-top: 1.3rem;
+	}
+
+	.row1 {
+		padding: 0px;
+	}
+
+	.log {
+		top: 30px;
+		left: 10px;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.log1 {
+		padding: 2.5em 1.5em;
+	}
+
+	button {
+		margin-top: 1rem;
+	}
+
+}
